@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="https://brunozhon.github.io" xmlns="https://brunozhon.github.io" elementFormDefault="qualified">
+  <xs:element name="channel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="name" type="xs:string" />
+        <xs:element name="description" type="xs:string" />
+        <xs:element name="header">
+          <xs:complexType>
+            <xs:complexContent>
+              <!--xs:restriction base="xs:string"-->
+                <xs:attribute name="status" type="xs:integer" />
+                <xs:attribute name="requestType" type="requesttype" />
+              <!--/xs:restriction-->
+            </xs:complexContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="content">
+          <xs:complexType mixed="true">
+            <xs:any minOccurs="0" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:complexType name="requesttype">
+    <xs:restriction base="xs:string">
+      <xs:enumration value="recive-request" />
+      <xs:enumration value="send-request" />
+      <xs:enumration value="recive-response" />
+      <xs:enumration value="send-response" />
+    </xs:restriction>
+  </xs:complexType>
+</xs:schema>
