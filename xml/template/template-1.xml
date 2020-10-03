@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<messages>
+  <message id="a1ns7sx6">
+    <title>Hello!</title>
+    <message_details to="Jane" from="Leai" />
+    <content>I am learning HTML, CSS, and JavaScript. Would <ref for="Jane">you</ref> like to learn.</content>
+  </message>
+  <message id="b5js9xkk">
+    <title>Yes!</title>
+    <message_details to="Leai" from="Jane" />
+    <content>Yes! I am currently learning in <link url="https://www.w3schools.com">W3Schools</link>.</content>
+  </message>
+</messages>
