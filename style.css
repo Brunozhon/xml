@@ -4,3 +4,12 @@
 .colon {
   color: #808080;
 }
+pre {
+  font-size: 125%;
+}
+a:link, a:visited, a:hover, a:active {
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+}
